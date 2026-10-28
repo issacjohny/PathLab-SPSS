@@ -1,0 +1,56 @@
+PathLab: proposed Extension Hub catalog information
+Prepared 28 October 2026 | Version 0.2.2 beta
+Catalog draft: IBM's maintainers may require a different form or field limits.
+
+Display name
+PathLab: Mediation and Moderation
+
+Developer / maintainer
+Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+
+Public contact: johnydurai@gmail.com
+Website: https://www.johny.uk
+Source repository: https://github.com/issacjohny/PathLab-SPSS
+Release page: https://github.com/issacjohny/PathLab-SPSS/releases/tag/v0.2.2
+License: MIT, approved by the developer on 28 October 2026; see LICENSE.
+
+Publication status: the source and release URLs are prepared locations; public release links are recorded in metadata.json.
+
+Short description
+Menu-driven observed-variable mediation, moderation and conditional process analysis with bootstrap intervals, interaction diagrams and Johnson–Neyman path-slope diagrams.
+
+Long description
+PathLab adds Analyze > PathLab: Mediation and Moderation to IBM SPSS Statistics. A native dialog provides variable assignment, analysis-goal choices, mediation structure, moderation stages, inference settings and diagram options. Standard output starts with the fitted model and main confidence intervals; Full output adds detailed contrasts and diagnostic tables.
+
+The extension offers parallel, serial and combined mediator presets, continuous outcomes and binary 0/1 logistic outcomes. Categorical predictors, moderators and covariates use explicit reference-group coding. Included moderated paths retain the required lower-order interaction terms. Indirect effects and contrasts use paired whole-case percentile bootstrap intervals. HC3 or conventional coefficient covariance can be selected.
+
+Interaction diagrams show fitted means or probabilities at labeled moderator values. Johnson–Neyman diagrams show an applicable conditional path slope, its pointwise confidence band and analytic boundaries within the observed moderator range. These regions apply to individual path slopes; bootstrap indirect-effect intervals remain separately identified. PNG export and an optional numerical results file support local review and reproducibility.
+
+All equations use one common complete-case sample, respecting SPSS user/system missing values and active filtering. Active weighting and split-file analysis are rejected. Statistical associations do not by themselves establish causation. Logistic indirect products are reported as log-odds-scale associations. Latent-variable models, arbitrary graph editing and equation-specific covariates are outside this menu interface.
+
+Version and compatibility
+Version: 0.2.2 beta.
+Extension bundle minimum-version metadata: SPSS Statistics 27.
+Verified environment: 64-bit Windows SPSS Statistics 27 with bundled Python 3.8.2.
+Version 0.2.2 status: license/contact packaging update; historical native checks retain their original tested versions. No new 0.2.2 native installation or calculation acceptance run is recorded yet.
+Later SPSS versions: compatibility targets; not yet executed or verified.
+macOS and Linux: not verified; the supplied setup launcher is Windows-specific.
+
+Installation and dependencies
+Install the required calculation libraries using the supplied Windows PathLab Setup application and the Python interpreter bundled with SPSS, then install the .spe through Extensions > Install Local Extension Bundle and restart SPSS. A separate system Python installation is not required for the tested SPSS 27 setup.
+
+Calculation libraries: NumPy, pandas, SciPy, statsmodels and Matplotlib. The tested SPSS 27 Python 3.8 versions are NumPy 1.24.4, pandas 2.0.3, SciPy 1.10.1, statsmodels 0.14.1 and Matplotlib 3.7.5. requirements.txt also selects pins for later Python versions, but those selections do not establish later-SPSS compatibility.
+
+Data handling
+Analysis runs locally. The one-time library setup downloads software dependencies; normal analysis does not download packages or upload datasets. No Stratistics account, web service or PROCESS macro is required.
+
+Suggested keywords
+mediation; moderation; conditional process; bootstrap; interaction; Johnson–Neyman; regression; SPSS; Python
+
+Recommended software citation
+B. Issac Johny. (2026). PathLab for IBM SPSS Statistics (Version 0.2.2) [Computer software]. Gnanam School of Business, Thanjavur.
+
+Status note
+Prepared for consideration as a Community extension. IBM acceptance and catalog availability are pending; this description is not a claim of IBM certification or product support.

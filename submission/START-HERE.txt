@@ -1,0 +1,59 @@
+PathLab submission review package
+Prepared 28 October 2026 | Version 0.2.2 beta
+
+Developed by Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+johnydurai@gmail.com
+https://www.johny.uk
+
+Open documents/PathLab-Submission-Dossier.pdf for the complete review document,
+or documents/PathLab-Submission-Dossier.docx to edit it. The drafts folder contains a
+copyable cover letter, catalog entry, menu-based reviewer guide, validation
+summary and release checklist. These materials are prepared locally for
+developer review. The GitHub beta is published under the developer's account.
+No IBM submission has been sent.
+
+Package contents
+
+release/ contains the PathLab 0.2.2 SPE and Windows installer ZIP. Version
+0.2.2 packages the developer-approved MIT license and maintainer contact.
+Its statistical calculation code is unchanged from 0.2.1. Historical
+validation retains the version and checksum of the artifact actually tested.
+
+source/ contains a standalone archive of the extension source, tests, tools,
+documentation and synthetic examples. DEVELOPMENT.txt explains the build
+and tests. It excludes the unrelated Stratistics website, local dependency
+environments, credentials, user datasets and private output documents.
+
+LICENSE contains the MIT license approved by the developer on 28 October
+2026. Preserve the copyright and permission notice when redistributing
+PathLab. THIRD-PARTY-NOTICES.txt describes the separately installed libraries;
+their respective licenses and notices remain applicable. The earlier draft
+license is historical preparation material and does not govern this release.
+
+metadata.json records author/contact details, compatibility scope and pending
+actions. review-manifest.json and SHA256SUMS.txt identify the exact review
+files. Evidence files retain their original tested versions and checksums.
+
+Before public submission
+
+1. Review the updated dossier and copyable submission drafts.
+2. Source repository and versioned beta download page:
+   https://github.com/issacjohny/PathLab-SPSS
+   https://github.com/issacjohny/PathLab-SPSS/releases/tag/v0.2.2
+3. Complete and record final menu-to-results acceptance and a clean-user
+   dependency installation. Use the included synthetic CSV and reviewer guide.
+4. Test a current SPSS release before describing later versions as verified.
+   SPSS 27 on Windows is the verified environment; other operating systems
+   and smaller displays remain separate checks.
+5. Confirm the current SPSS Community submission contact and intake process.
+   Approve the final IBM submission message, then send through that route. IBM decides whether to accept a Community listing.
+
+The website above is the developer's supplied website. The repository,
+versioned beta release and GitHub issue tracker are listed in MAINTAINER.txt.
+IBM's published contribution guide is dated 8 April 2020; verify the current
+intake procedure rather than relying on an old form or a promised response time.
+
+Review preparation is complete when the supplied files can be inspected and
+rebuilt. Public submission readiness requires the remaining actions above.

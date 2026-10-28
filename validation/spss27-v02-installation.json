@@ -1,0 +1,85 @@
+{
+  "validated_on": "2026-10-28",
+  "version": "0.2.0",
+  "spss_major_version": 27,
+  "status": "installed_runtime_and_dialog_verified",
+  "installation_method": "IBM installextbundles utility; SPSS restarted after installation",
+  "installed_bundle_sha256": "21d2e4b79f9000c43b1f59a57a817df68c0aab71f00007d4350d2886852ef264",
+  "installed_bundle_copy_matches_release": true,
+  "installed_runtime_files": [
+    {
+      "installed_relative_path": "extensions/PATHLAB.py",
+      "sha256": "c5cdc26387a949dee64f3428934744f20bc1168bb0444e9c151af3568f7cac97",
+      "matches_bundle": true
+    },
+    {
+      "installed_relative_path": "extensions/PATHLAB.xml",
+      "sha256": "16b1b9582299223a4100b020224c07f7649b4f996f2feaffaa034db4f68424fd",
+      "matches_bundle": true
+    },
+    {
+      "installed_relative_path": "extensions/PATHLAB/pathlab_spss.zip",
+      "sha256": "a54b8cf6bf23c9abd894158456878244e0833c03dc6fed2a91575be2733eb634",
+      "matches_bundle": true
+    }
+  ],
+  "installed_dialog_files": [
+    {
+      "installed_relative_path": "CustomDialogs/PATHLAB_DIALOG/PATHLAB_DIALOG.xml",
+      "installed_sha256": "1e199edd4ebfbfc27bb3c2fea7682f28efd1fe166516a78b99bfda01e65a984a",
+      "bundle_sha256": "b450a3fb1f602f4301a1f5ce84bd4db421479967cedc9bbace142ba110f8dac3",
+      "byte_identical": false
+    },
+    {
+      "installed_relative_path": "CustomDialogs/PATHLAB_DIALOG/PATHLAB_DIALOG.properties",
+      "installed_sha256": "99a0eac3fdc27781d41ad2d0d1ff64556c241dbfa355d7249cafed47c626bcfc",
+      "bundle_sha256": "99a0eac3fdc27781d41ad2d0d1ff64556c241dbfa355d7249cafed47c626bcfc",
+      "byte_identical": true
+    },
+    {
+      "installed_relative_path": "CustomDialogs/PATHLAB_DIALOG/PATHLAB_DIALOG.htm",
+      "installed_sha256": "3aabd33f883365cdeb6d6be80b1da05d1ea06c2535bd7eb674b9c1f710ed18b5",
+      "bundle_sha256": "3aabd33f883365cdeb6d6be80b1da05d1ea06c2535bd7eb674b9c1f710ed18b5",
+      "byte_identical": true
+    }
+  ],
+  "dialog_semantic_comparison": {
+    "property_syntax_defaults_labels_numeric_limits_and_enumerations_match": true,
+    "properties_checked": 27,
+    "control_types_bindings_attributes_and_grid_layouts_match": true,
+    "controls_checked": 25,
+    "note": "SPSS rewrites installed XML with metadata, localization attributes and normalized numerical formatting; XML byte hashes differ."
+  },
+  "numeric_and_viewer_acceptance": {
+    "evidence": "validation/spss27-v02-diagrams.json",
+    "dispatch": "installed native PATHLAB command through GUI Run > All",
+    "tested_bundle_sha256": "5c2638e262b9d703ec6e0f2fbf680b6bba50c40fd38955d92ad780e2766dc805",
+    "entry_and_runtime_identical_to_final_bundle": true,
+    "complete_cases": 71,
+    "successful_bootstrap_replications": 200,
+    "both_diagrams_embedded_and_pixel_matched": true,
+    "viewer_notices": []
+  },
+  "menu_form_inspection": {
+    "source": "manual native SPSS27 GUI inspection in this task",
+    "analyze_menu_entry_opened": true,
+    "main_eight_variable_assignments_rendered": true,
+    "model_structure_family_reference_controls_rendered": true,
+    "four_moderation_stage_controls_rendered": true,
+    "diagram_and_options_controls_rendered": true,
+    "main_dialog_positioned_near_top_for_current_display": true,
+    "assignment_interaction_checked_in_prior_candidate_with_same_fields": [
+      "X",
+      "Y",
+      "W"
+    ],
+    "final_menu_ok_analysis_executed": false,
+    "smaller_display_layouts_verified": false
+  },
+  "scope_limits": [
+    "The final main-menu OK button was not used for a menu-driven analysis.",
+    "Numerical and embedded-chart execution was verified separately through the installed native command.",
+    "Newer SPSS versions were not installed or executed.",
+    "Analysis acceptance used synthetic data; no user data or raw SPV is distributed."
+  ]
+}

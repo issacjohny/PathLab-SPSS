@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Command xmlns="http://www.ibm.com/software/analytics/spss/xml/extension"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/extension http://www-01.ibm.com/software/analytics/spss/xml/extension-1.0.xsd"
+ Name="PATHLAB" Language="Python" LanguageVersion="3">
+  <Subcommand Name="" Occurrence="Required">
+    <Parameter Name="X" ParameterType="VariableName"/>
+    <Parameter Name="Y" ParameterType="VariableName"/>
+    <Parameter Name="MEDIATORS" ParameterType="VariableNameList"/>
+    <Parameter Name="COVARIATES" ParameterType="VariableNameList"/>
+    <Parameter Name="W" ParameterType="VariableName"/>
+    <Parameter Name="Z" ParameterType="VariableName"/>
+    <Parameter Name="Q" ParameterType="VariableName"/>
+  </Subcommand>
+  <Subcommand Name="MODEL" Occurrence="Optional">
+    <Parameter Name="STRUCTURE" ParameterType="Keyword"/>
+    <Parameter Name="FAMILY" ParameterType="Keyword"/>
+    <Parameter Name="CATEGORICAL" ParameterType="VariableNameList"/>
+    <Parameter Name="REFERENCE" ParameterType="Keyword"/>
+    <Parameter Name="ANALYSIS" ParameterType="Keyword"/>
+  </Subcommand>
+  <Subcommand Name="MODERATION" Occurrence="Optional">
+    <Parameter Name="FIRST" ParameterType="Keyword"/>
+    <Parameter Name="SECOND" ParameterType="Keyword"/>
+    <Parameter Name="SERIAL" ParameterType="Keyword"/>
+    <Parameter Name="DIRECT" ParameterType="Keyword"/>
+  </Subcommand>
+  <Subcommand Name="OPTIONS" Occurrence="Optional">
+    <Parameter Name="BOOTSTRAP" ParameterType="Integer"/>
+    <Parameter Name="CONFIDENCE" ParameterType="Number"/>
+    <Parameter Name="SEED" ParameterType="Integer"/>
+    <Parameter Name="ROBUST" ParameterType="Keyword"/>
+  </Subcommand>
+  <Subcommand Name="OUTPUT" Occurrence="Optional">
+    <Parameter Name="JSON" ParameterType="OutputFile"/>
+    <Parameter Name="DETAIL" ParameterType="Keyword"/>
+  </Subcommand>
+  <Subcommand Name="PLOTS" Occurrence="Optional">
+    <Parameter Name="TYPE" ParameterType="Keyword"/>
+    <Parameter Name="DIRECTORY" ParameterType="QuotedString"/>
+  </Subcommand>
+</Command>

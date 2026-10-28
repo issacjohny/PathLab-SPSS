@@ -1,0 +1,40 @@
+{
+  "validated_on": "2026-10-28",
+  "version": "0.2.2",
+  "status": "source_and_packaging_checks_passed",
+  "license": {
+    "spdx_id": "MIT",
+    "approved_by": "Dr. B. Issac Johny",
+    "approved_on": "2026-10-28",
+    "spe_license_and_notices_match_source": true
+  },
+  "source_tests": {
+    "passed": 101,
+    "python_version": "3.11.9"
+  },
+  "python_3_8_syntax": {
+    "python_version": "3.8.2",
+    "files_parsed": 25
+  },
+  "bundle": {
+    "filename": "PathLab-0.2.2.spe",
+    "sha256": "eb0bd25bf22d2ee77d991386e74b994ddaf421cceece4f008e329dacefb74f8f",
+    "author_and_version_verified": true
+  },
+  "runtime_files_byte_identical_to_0_2_1_except_version": [
+    "pathlab_spss/adapter.py",
+    "pathlab_spss/branding.py",
+    "pathlab_spss/core.py",
+    "pathlab_spss/errors.py",
+    "pathlab_spss/models.py",
+    "pathlab_spss/plots.py",
+    "pathlab_spss/report.py",
+    "pathlab_spss/viewer.py",
+    "pathlab_spss/source-provenance.json"
+  ],
+  "scope_limits": [
+    "No new native SPSS installation or menu-driven analysis was executed for 0.2.2.",
+    "The source tests do not establish later-SPSS or other operating-system compatibility.",
+    "GitHub distribution does not indicate IBM Extension Hub acceptance."
+  ]
+}

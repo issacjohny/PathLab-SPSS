@@ -1,0 +1,46 @@
+PathLab: validation summary for prospective reviewers
+Prepared 28 October 2026 | Version 0.2.2 beta
+
+Developed by Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+
+Scope
+PathLab is an observed-variable mediation, moderation and conditional process extension with native SPSS menu dialogs, numerical output and interaction/Johnson–Neyman diagrams. This summary separates automated source tests, native execution, installation and menu interaction. Acceptance in the IBM catalog has not been established.
+
+Automated tests
+At the 0.2.1 checkpoint, the extension suite passed 101 tests in the workspace Python 3.11 statistical environment. Checks cover independent numerical references, frozen-source fidelity, preset graph semantics, required interaction hierarchy, categorical coding, common analysis samples, unsupported requests, SPSS adapter behavior, report construction, plotting, bundle structure and installed-layout imports. These automated tests complement native SPSS checks; they do not simulate every SPSS menu interaction. Version 0.2.2 also passes 101 tests; its separate packaging evidence is validation/spss27-v022-packaging.json.
+
+Verified SPSS runtime
+Windows 64-bit IBM SPSS Statistics 27.0.0.0, integration plug-in spss270 and bundled Python 3.8.2 were used for the documented native checks. The tested Python 3.8 libraries are NumPy 1.24.4, pandas 2.0.3, SciPy 1.10.1, statsmodels 0.14.1 and Matplotlib 3.7.5.
+
+Historical numerical and Viewer execution: version 0.2.0
+The installed native PATHLAB command ran in the SPSS 27 GUI backend on a deterministic synthetic validation dataset. Of 90 original cases, filtering selected 72 and one user-missing observation reduced the common complete-case sample to 71. All 200 requested paired bootstrap replications completed. The run produced 12 effect rows, two index rows, native Viewer output and both diagrams without Viewer notices.
+
+The synthetic validation fixture's X-to-mediator Johnson–Neyman boundary was approximately -0.9124413470. Both embedded images were decoded and their RGBA pixel hashes matched the rendered diagrams exactly. SPSS can re-encode PNG file bytes, so image acceptance used pixel equality. These values apply to the separate validation fixture, not the shipped 180-case demonstration CSV.
+
+Final version 0.2.0 native forms and installation were inspected separately. The main assignment fields and the Model, Moderators, Diagrams and Options forms rendered on a 1920 by 1080 display. The final main OK button was not used to execute an analysis. Its successful native-command computation must therefore be distinguished from a complete menu-driven acceptance run.
+
+Attribution release: version 0.2.1
+Version 0.2.1 adds the developer's name, title and affiliation to the runtime output, diagrams, help and supporting materials, and the name to package metadata and the dialog title. The scientific core, model definitions and exception contract are byte-identical to version 0.2.0, as recorded in the attribution evidence.
+
+The 0.2.1 checks included Python 3.8 syntax parsing of 24 files, main and full-appendix report construction using captured output calls, generation and visual inspection of both branded diagrams, IBM installer success, comparison of installed files with the release, installed dialog-title/help checks and an isolated installed-runtime import reporting 0.2.1. The report-construction check did not connect to the running SPSS session. That session was left open and needs a user restart to load the updated runtime.
+
+License and publication preparation: version 0.2.2
+The developer approved the MIT license on 28 October 2026. Version 0.2.2 packages that license and the public maintainer details with unchanged statistical calculation code. The prepared repository is https://github.com/issacjohny/PathLab-SPSS and the versioned release URL is https://github.com/issacjohny/PathLab-SPSS/releases/tag/v0.2.2. The versioned source and release links identify the GitHub beta distribution. No new native SPSS installation or menu-driven calculation acceptance run is recorded for 0.2.2 yet.
+
+Evidence supplied
+VALIDATION.md gives the detailed narrative and reproduction notes.
+validation/spss27-gui.json records historical initial GUI-backend checks.
+validation/spss27-v02-full.json records the version 0.2 detailed-output run.
+validation/spss27-v02-diagrams.json records installed native-command diagram acceptance.
+validation/spss27-v02-installation.json records persistent installation and native forms separately.
+validation/spss27-v021-attribution.json records the version 0.2.1 attribution checks.
+source-provenance.json identifies the frozen statistical source snapshot and adaptation.
+Versioned build manifests identify bundle contents and checksums. Use the checksum supplied with the exact proposed review artifact rather than substituting a historical hash.
+
+Open validation work before a broad public compatibility claim
+Complete and record the final menu-to-results flow, including mediation, moderation and conditional process examples. Test a current SPSS release with its bundled Python and the selected dependency pins. Check smaller display layouts and clean-user dependency installation. Validate macOS/Linux separately if support is proposed. Re-run affected checks after release changes and retain the exact tested artifact checksum.
+
+Interpretation limits
+The extension reports statistical associations. All equations use a common complete-case sample; no imputation is performed. Active weights and split files are rejected. Indirect effects use paired-case percentile bootstrap intervals. Johnson–Neyman regions concern individual conditional path slopes with pointwise inference; they are not exact indirect-effect regions. Logistic indirect products are log-odds-scale associations, not natural causal effects or probability-scale effects.

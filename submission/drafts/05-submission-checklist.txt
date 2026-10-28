@@ -1,0 +1,68 @@
+PathLab: submission preparation and release checklist
+Prepared 28 October 2026 | Version 0.2.2 beta
+
+Developer / proposed maintainer
+Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+
+Status
+Local submission materials are prepared for developer review. The GitHub beta release is prepared under the developer's account. No IBM submission has been sent. No IBM acceptance, endorsement, certification or support commitment is claimed.
+
+Published IBM route
+IBM's contribution article, published 8 April 2020, describes putting an extension on GitHub with a description and contact information, then sending its URL to the SPSS Community manager. Accepted contributions are described as Community extensions in IBM's Predictive Analytics GitHub collection. IBM's Extension Hub documentation describes searching, downloading and installing extensions from that collection. Confirm the current intake contact and procedure before sending; this historical article is not evidence of a current response deadline or guaranteed acceptance.
+
+Sources
+IBM Community, Contribute to extensions for SPSS Statistics and Modeler:
+https://community.ibm.com/community/user/viewdocument/contribute-to-extensions-for-spss-s?CommunityKey=886b6874-0fb1-402c-8243-c70ef8179a99&tab=librarydocuments
+IBM SPSS Statistics documentation, Extension Hub:
+https://www.ibm.com/docs/en/spss-statistics/30.0.0?topic=extensions-extension-hub
+
+The checklist below is PathLab's preparation recommendation. It is not a list of separately verified IBM acceptance rules.
+
+Developer information and decisions
+[x] Use the developer's supplied author name and affiliation shown above.
+[x] Public maintainer email supplied: johnydurai@gmail.com.
+[x] Website supplied: https://www.johny.uk.
+[x] MIT license approved by the developer on 28 October 2026; see LICENSE.
+[ ] Preserve required third-party notices in every applicable distribution.
+[x] Prepare the public repository URL: https://github.com/issacjohny/PathLab-SPSS.
+[x] Prepare the stable public release URL: https://github.com/issacjohny/PathLab-SPSS/releases/tag/v0.2.2.
+[ ] Publish and verify public access to the prepared repository and release URLs.
+[ ] Confirm how issues and user support will be handled.
+
+Package and public repository
+[ ] Publish only the extension's source, tests, tools, documentation and synthetic examples intended for review.
+[ ] Include the complete .spe bundle, Windows setup files, requirements, author credit, citation, license and applicable notices.
+[ ] Include the installation/menu-use guide, limitations, dependency information and versioned release notes.
+[ ] Include a clear source-provenance record and a versioned artifact/checksum manifest.
+[ ] Exclude user data, raw private outputs, local caches, dependency environments, credentials and unrelated Stratistics application files.
+[ ] Verify that package contents correspond to the published source and that the download and documentation links work without private access.
+
+Validation to complete and record
+[ ] Run a clean-user Windows installation and confirm package/dependency setup.
+[ ] Restart SPSS and complete a simple mediation analysis through the final main dialog OK button.
+[ ] Complete a moderation analysis through the menu and inspect both diagrams.
+[ ] Complete a conditional process analysis through the menu and inspect Full output.
+[ ] Retain synthetic run settings, warnings, sample/bootstrap counts and the tested package checksum.
+[ ] Test a current SPSS release before claiming later-version compatibility.
+[ ] Check dialog usability at smaller displays.
+[ ] Test other operating systems separately if they will be advertised.
+[ ] Keep historical evidence identified by its original version; do not present it as a new native run after a later change.
+
+Review materials
+[ ] Finalize the cover letter with contact, license and public links.
+[ ] Review the proposed catalog description and compatibility wording.
+[ ] Review the menu-based reviewer guide against the tested build.
+[ ] Attach or link the validation summary, detailed report and sanitized evidence.
+[ ] Include synthetic diagram previews and their explanation; do not call them expected results for a different dataset.
+[ ] Confirm the citation and developer attribution throughout the submission.
+
+Final submission step
+[ ] Confirm the current IBM intake route and recipient.
+[ ] Obtain the developer's approval of the concrete public materials and outgoing message.
+[ ] Publish the approved release and send the approved review request through the confirmed route.
+[ ] Record the submission date and response; make no acceptance claim until IBM confirms it.
+
+Current readiness summary
+Prepared components include genuine native .spe packaging, developer attribution, public contact information, menu and installation documentation, synthetic examples, a historical 101-test suite and SPSS 27 runtime/installation evidence. The developer approved MIT licensing for 0.2.2 and its source and beta packages are distributed through GitHub. Version 0.2.2 passes the 101-test suite and package license checks. New native installation acceptance, final menu-to-results acceptance and later-SPSS execution remain open validation work. These gaps are visible in the review draft and should be resolved or explicitly agreed with the reviewers before broad public release claims.

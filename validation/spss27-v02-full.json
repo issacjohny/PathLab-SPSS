@@ -1,0 +1,45 @@
+{
+  "validated_on": "2026-10-28",
+  "version": "0.2.0",
+  "status": "passed",
+  "dispatch": "isolated SPSS27 engine, direct adapter, FULL detailed native tables, diagrams disabled",
+  "data": "deterministic synthetic cases only",
+  "runtime": {
+    "spss": "27.0.0.0",
+    "spssdata": "available",
+    "extension": "available",
+    "numpy": "1.24.4",
+    "pandas": "2.0.3",
+    "scipy": "1.10.1",
+    "statsmodels": "0.14.1",
+    "matplotlib": "3.7.5"
+  },
+  "sample": {
+    "source_n": 72,
+    "n": 71,
+    "excluded": 1,
+    "rule": "One fixed listwise sample across all graph nodes and equations"
+  },
+  "bootstrap": {
+    "requested": 200,
+    "successful": 200,
+    "failed": 0,
+    "seed": 2738,
+    "ci_method": "percentile",
+    "confidence_level": 0.95,
+    "success_threshold": 0.95,
+    "failure_reasons": {},
+    "quantile_method": "linear",
+    "rng": "numpy.PCG64"
+  },
+  "effect_rows": 12,
+  "index_rows": 2,
+  "output_detail": "FULL",
+  "diagram_mode": "NONE",
+  "system_python_changes": false,
+  "user_dataset_access": false,
+  "source_files_sha256": {
+    "pathlab_spss/core.py": "480036227c42015b31a7bbedd619e5cfa12643c1e9213419499a428dd76d1d9b",
+    "pathlab_spss/report.py": "a2fa769689c3ea3b17af62f5851cb3a5ecbcf644f8f6793e2babed8cadaeab18"
+  }
+}

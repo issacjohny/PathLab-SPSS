@@ -1,0 +1,39 @@
+PathLab for IBM SPSS Statistics
+Version 0.2.2 beta
+28 October 2026
+
+Developed by Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+johnydurai@gmail.com | https://www.johny.uk
+
+This release prepares PathLab for public GitHub distribution and IBM SPSS
+Community extension review. It adds the developer-approved MIT license,
+third-party dependency notices and maintainer/contact details to the native
+SPE and Windows release package. Documentation and citation identify the
+public repository and this release.
+
+The statistical engine and model definitions are unchanged. Mediation,
+moderation, conditional process inference, interaction diagrams and
+Johnson-Neyman diagrams retain their existing behavior.
+
+Compatibility and validation
+
+SPSS 27 on 64-bit Windows with bundled Python 3.8.2 is the verified native
+environment for the historical execution and attribution checks. Version
+0.2.2 changes licensing, attribution metadata and documentation. Its source
+checks and packaging evidence are recorded separately. Complete final-menu
+OK acceptance and later-SPSS execution remain to be recorded. Later releases
+and other operating systems require their own native installation and
+calculation checks before being advertised as verified.
+
+Install
+
+Download and extract PathLab-SPSS-0.2.2.zip. Save work and close SPSS before
+the one-time PathLab-Setup.cmd library setup. Use the Python bundled with
+SPSS, then open SPSS and install PathLab-0.2.2.spe through Extensions >
+Install Local Extension Bundle. Restart SPSS and open Analyze > PathLab:
+Mediation and Moderation. See README.md for the full menu guide.
+
+The release is a beta offered under the MIT license. IBM Extension Hub
+acceptance and IBM product support are separate from GitHub publication.

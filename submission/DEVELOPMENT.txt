@@ -1,0 +1,106 @@
+PATHLAB FOR IBM SPSS STATISTICS — DEVELOPMENT AND REPRODUCTION
+
+Developed by Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+
+Scope
+-----
+This is the standalone PathLab SPSS extension source tree. It does not
+require the surrounding Stratistics website, Next.js, Supabase or a hosted
+account. Version and developer identity are defined in pathlab_spss/
+__init__.py and branding.py. LICENSE contains the MIT license approved by
+the developer on 28 October 2026. submission/metadata.json records the
+license approval, public contact and publication status. License approval
+does not establish IBM catalog acceptance.
+
+Create an isolated developer environment
+---------------------------------------
+Use a supported Python 3 interpreter and a fresh virtual environment.
+Python 3.8.2 is the bundled interpreter used for the documented SPSS 27
+checks. Later interpreters and SPSS releases require their own checks.
+
+From the extracted source folder on Windows:
+
+    python -m venv .venv
+    .venv\Scripts\python.exe -m pip install -r requirements.txt pytest
+    .venv\Scripts\python.exe -m pytest tests -q
+
+requirements.txt selects calculation and diagram-library versions by Python
+version. Network access is needed for dependency installation. The test
+suite uses synthetic data and mocks at the SPSS integration boundary; it
+does not require a licensed SPSS session for the source checks. Passing
+these tests does not establish native-menu or later-SPSS compatibility.
+
+Build extension bundles
+-----------------------
+From the same extracted source folder:
+
+    .venv\Scripts\python.exe tools\build_bundle.py
+
+The builder writes versioned SPE, SPD and Windows release ZIP files into
+dist/. The SPE contains the native menu dialog, command and runtime. A
+standalone SPD is only the dialog. Building does not install an extension,
+start SPSS or change a dataset. Keep the archived release files unchanged
+when reproducing a published version; use a separate checkout or output
+folder when comparing a candidate build.
+
+The source provenance file records the exact frozen statistical engine
+snapshot and its one exception-import adaptation. tests/test_core.py checks
+the source hashes and independent QR/Newton matrix and paired-bootstrap
+references. See VALIDATION.md and validation/ for the scope of actual SPSS
+execution evidence and outstanding checks.
+
+Prepare local submission archives
+---------------------------------
+With submission/metadata.json present and matching the shared identity:
+
+    .venv\Scripts\python.exe tools\prepare_submission.py --source-only
+
+This writes a deterministic source ZIP into submission/artifacts/. It
+includes only the extension source, examples, tests, tools, validation and
+selected submission context. It excludes caches, Git metadata, unrelated
+website files, previous dist/ artifacts and recursive submission archives.
+
+For the full review archive, retain the original versioned SPE and Windows
+ZIP in dist/, the draft TXT files in submission/drafts/, the review-context
+files listed by the tool, and both of these documents:
+
+    submission/documents/PathLab-Submission-Dossier.docx
+    submission/documents/PathLab-Submission-Dossier.pdf
+
+The tool also accepts those two dossier files directly in submission/.
+
+    .venv\Scripts\python.exe tools\prepare_submission.py
+
+The full preparation fails when required documents or release files are
+missing. It copies the existing SPE and Windows ZIP byte for byte, creates
+a standalone source ZIP, and includes review-manifest.json and SHA256SUMS.txt.
+SHA256SUMS.txt covers every other file inside the review archive. Stable
+input files produce stable ZIP bytes. Document editing or regeneration can
+change their input bytes and therefore the resulting review-archive hash.
+
+Native SPSS verification
+------------------------
+Use licensed SPSS on a dedicated synthetic-data test session. Install the
+release following README.md, restart SPSS after installing or updating,
+and follow examples/README.md through the Analyze menu. Start with all
+cases, weights off and split files off, and clear earlier dialog selections
+between scenarios. The demo CSV has 180 finite numeric cases.
+
+Do not run a developer engine helper against another person's live SPSS
+session or replace an active dataset. The optional engine and GUI helpers
+are documented in VALIDATION.md and their source headers; their numerical
+or native-command execution is separate from a complete menu-OK test.
+The historic 71-case acceptance used a different synthetic dataset and is
+not an expected result for the 180-case demonstration CSV.
+
+Submission status
+-----------------
+Version 0.2.2 is the license/contact publication candidate. Its
+repository is https://github.com/issacjohny/PathLab-SPSS and its versioned
+release page is https://github.com/issacjohny/PathLab-SPSS/releases/tag/v0.2.2.
+The GitHub beta release is distributed separately from IBM review. Archive preparation does not
+itself publish source, upload a release, send a message to IBM, assert
+acceptance or supply IBM product support. Complete the pending actions in
+submission/metadata.json before an external IBM submission.

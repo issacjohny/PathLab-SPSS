@@ -1,0 +1,71 @@
+{
+  "validated_on": "2026-10-28",
+  "status": "passed",
+  "dispatch": "SPSS 27 native PATHLAB command in actual GUI backend, driven by documented SpssClient.RunSyntax",
+  "data": "deterministic synthetic cases only",
+  "runtime": {
+    "python": "3.8.2",
+    "spss": "spss270",
+    "numpy": "1.24.4",
+    "pandas": "2.0.3",
+    "scipy": "1.10.1",
+    "statsmodels": "0.14.1"
+  },
+  "sample": {
+    "source_n": 72,
+    "n": 71,
+    "excluded": 1,
+    "rule": "One fixed listwise sample across all graph nodes and equations"
+  },
+  "selection": {
+    "dataset_n": 90,
+    "read_n": 72,
+    "filtered_n": 18,
+    "selected_n": 72,
+    "filter_variable": "selected",
+    "user_missing": "Converted to missing before common listwise selection",
+    "weight": "off",
+    "split_file": "off"
+  },
+  "bootstrap": {
+    "requested": 200,
+    "successful": 200,
+    "failed": 0,
+    "seed": 2738,
+    "ci_method": "percentile",
+    "confidence_level": 0.95,
+    "success_threshold": 0.95,
+    "failure_reasons": {},
+    "quantile_method": "linear",
+    "rng": "numpy.PCG64"
+  },
+  "output": {
+    "native_viewer_procedure_completed": true,
+    "json_result_written": true,
+    "effect_rows": 12,
+    "index_rows": 2,
+    "equations": 2
+  },
+  "loaded_runtime": "PATHLAB/pathlab_spss.zip",
+  "tested_files_sha256": {
+    "PATHLAB.py": "e08e83c8cb960dc030d730c7adedcb6e6c052a5390d3400d991835fc7da7d3ac",
+    "PATHLAB.xml": "956a033f65e94bf35b8d10d9a4bb500d4e5af0ce13ecf3d415629e39fad9efc2",
+    "pathlab_spss.zip": "d562f6638ad81da63cffc2bf36af46119707a7b89c9113cf6310c4912faaede7"
+  },
+  "test_suite": {
+    "passed": 76,
+    "python": "3.11",
+    "scope": "independent numerical references, model presets, adapter boundary, report, bundle, setup checks"
+  },
+  "installation": {
+    "persistent_bundle_installation": false,
+    "system_python_changes": false,
+    "numerical_libraries": "workspace-only test directory, supplied to GUI Python for this session"
+  },
+  "remaining_checks": [
+    "Persistent bundle menu installation and restart",
+    "Run through installed Analyze menu",
+    "Actual execution on SPSS releases newer than 27"
+  ],
+  "external_drive_limit": "Native callback from a standalone external Python driver stalled at first NumPy import. Direct adapter execution and actual GUI native command both completed; external-drive native callbacks are not claimed supported."
+}

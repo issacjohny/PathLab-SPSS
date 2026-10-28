@@ -1,0 +1,42 @@
+PathLab: draft request for IBM SPSS Community extension review
+Prepared 28 October 2026 | Version 0.2.2 beta
+Review draft: verify the prepared public repository and release links before sending.
+
+To: SPSS Community manager / extension maintainers
+Subject: Request to review PathLab for SPSS Extension Hub community listing
+
+Dear SPSS Community manager,
+
+I would like to request review of PathLab for IBM SPSS Statistics for possible inclusion as a Community extension in the SPSS Extension Hub.
+
+PathLab provides an Analyze-menu interface for observed-variable mediation, moderation and conditional process analysis. Users assign variables, choose model stages and output options, and run an analysis through a native dialog. The package supports parallel, serial and combined mediator presets, paired-case percentile bootstrap intervals, conditional path inference, interaction diagrams and Johnson–Neyman diagrams for applicable continuous moderators. It creates SPSS Viewer tables and diagram output and can save numerical results and PNG copies locally.
+
+The proposed submission is version 0.2.2 beta. Its developer and maintainer credit is:
+
+Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+Public maintainer email: johnydurai@gmail.com
+Website: https://www.johny.uk
+
+Public source repository: https://github.com/issacjohny/PathLab-SPSS
+Release and downloadable package: https://github.com/issacjohny/PathLab-SPSS/releases/tag/v0.2.2
+Distribution license: MIT, approved by the developer on 28 October 2026; see LICENSE.
+
+The source repository and versioned release are provided at the URLs above.
+
+The review materials include the native .spe extension bundle, source code, installation and menu-use guidance, synthetic demonstration data, example diagrams, statistical source provenance and a validation summary. The version 0.2.2 automated extension suite passed 101 tests. SPSS 27 on Windows has been used for runtime, installation, native-command calculation and diagram-insertion checks, and the 0.2.1 attribution update was checked in SPSS 27's bundled Python. Version 0.2.2 packages the approved license and public contact with unchanged statistical calculation code; it has not yet received a new native installation or menu calculation acceptance run. The validation report identifies the exact scope and version of each check.
+
+The current evidence has two important limits: a complete calculation through the final main dialog's OK button remains to be recorded, and later SPSS releases have not yet been executed. I am presenting these limits explicitly for reviewer assessment. This submission does not request that untested versions be described as verified.
+
+Please confirm the current submission and review procedure and advise whether the package can be considered for a Community extension listing, including any catalog metadata, licensing or dependency-installation requirements. Please direct review feedback to the public maintainer contact above.
+
+Thank you for considering the extension.
+
+Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+johnydurai@gmail.com
+https://www.johny.uk
+
+Preparation note: this letter is a draft for the developer's review. It has not been sent, and no IBM acceptance, certification or support status is claimed.

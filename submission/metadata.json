@@ -1,0 +1,60 @@
+{
+  "version": "0.2.2",
+  "release_channel": "beta",
+  "prepared_on": "2026-10-28",
+  "project": "PathLab for IBM SPSS Statistics",
+  "developer": {
+    "name": "Dr. B. Issac Johny",
+    "title": "Professor",
+    "affiliation": "Gnanam School of Business, Thanjavur",
+    "credit": "Developed by Dr. B. Issac Johny"
+  },
+  "contact": {
+    "email": "johnydurai@gmail.com",
+    "website": "https://www.johny.uk",
+    "website_status": "Supplied by the developer; not independently verified as a project download or support site"
+  },
+  "repository_url": "https://github.com/issacjohny/PathLab-SPSS",
+  "release_url": "https://github.com/issacjohny/PathLab-SPSS/releases/tag/v0.2.2",
+  "license": {
+    "spdx_id": "MIT",
+    "status": "approved",
+    "approved_on": "2026-10-28",
+    "adopted": true,
+    "license_file": "LICENSE",
+    "copyright_holder": "Dr. B. Issac Johny"
+  },
+  "submission_status": "github_beta_release_prepared_for_ibm_review",
+  "published": true,
+  "sent_to_ibm": false,
+  "ibm_accepted": false,
+  "compatibility": {
+    "bundle_minimum_spss": 27,
+    "verified_environment": "Windows 64-bit SPSS Statistics 27 with bundled Python 3.8.2",
+    "later_spss_versions_executed": false,
+    "other_operating_systems_verified": false,
+    "final_main_dialog_ok_analysis_recorded": false
+  },
+  "pending_actions": [
+    "Complete and record menu-to-results acceptance and clean-user dependency installation",
+    "Test a current SPSS release before broad later-version compatibility claims",
+    "Confirm the current IBM intake route and approve the final outgoing IBM submission"
+  ],
+  "sources": [
+    {
+      "title": "IBM Community contribution guidance",
+      "published_on": "2020-04-08",
+      "url": "https://community.ibm.com/community/user/viewdocument/contribute-to-extensions-for-spss-s?CommunityKey=886b6874-0fb1-402c-8243-c70ef8179a99&tab=librarydocuments"
+    },
+    {
+      "title": "IBM SPSS Statistics Extension Hub documentation",
+      "url": "https://www.ibm.com/docs/en/spss-statistics/30.0.0?topic=extensions-extension-hub"
+    },
+    {
+      "title": "MIT license text",
+      "url": "https://opensource.org/license/mit"
+    }
+  ],
+  "publication_status": "github_beta_release",
+  "published_on": "2026-10-28"
+}

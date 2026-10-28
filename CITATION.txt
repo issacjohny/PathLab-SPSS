@@ -1,0 +1,7 @@
+Recommended software citation
+
+B. Issac Johny. (2026). PathLab for IBM SPSS Statistics (Version 0.2.2)
+[Computer software]. Gnanam School of Business, Thanjavur.
+
+Developer: Dr. B. Issac Johny, Professor
+Affiliation: Gnanam School of Business, Thanjavur

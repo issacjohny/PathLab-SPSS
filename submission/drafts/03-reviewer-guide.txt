@@ -1,0 +1,56 @@
+PathLab: menu-based reviewer guide
+Prepared 28 October 2026 | Version 0.2.2 beta
+
+Developed by Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+Public maintainer contact: johnydurai@gmail.com
+Website: https://www.johny.uk
+
+Purpose
+This guide gives reviewers reproducible menu selections to assess installation, variable assignment, output and diagrams using synthetic data. These are review procedures to execute and record; they are not a statement that every step below has already passed in the final release.
+
+Version 0.2.2 packages the approved MIT license and public maintainer contact. Its statistical calculation code is unchanged from 0.2.1. Native SPSS evidence remains labeled by its actual tested version; a new 0.2.2 native installation and menu acceptance run remains to be recorded.
+
+1. Prepare a clean review environment
+Save existing work and use a separate SPSS session for the review. Record SPSS version and build, operating system, display resolution and bundled Python version. Windows SPSS 27 is the verified environment. Later SPSS versions and other operating systems need their own checks.
+
+Extract PathLab-SPSS-0.2.2.zip. With SPSS closed, open PathLab-Setup.cmd, confirm the SPSS bundled Python interpreter and select Install calculation libraries. The setup requires internet access to download dependencies. Record success or the complete error message. Setup stores libraries in the user's PathLab Python-version folder.
+
+Open SPSS, choose Extensions > Install Local Extension Bundle and select PathLab-0.2.2.spe. Restart SPSS. Confirm that Analyze > PathLab: Mediation and Moderation opens and that the dialog title includes Dr. B. Issac Johny. Confirm that Help shows the developer's name, title and affiliation.
+
+2. Open the synthetic demonstration data
+Choose File > Import Data > CSV Data and open examples/pathlab-demo.csv. Import the header row as variable names and use numerical scale variables for these demonstrations. The file contains 180 artificial cases and columns X, M1, M2, Y, W, Z, Q and C. It contains no participant data and supports no substantive research claim.
+
+Before each example, verify that Weight Cases and Split File are off and no unintended filter is active. Begin from a fresh PathLab dialog, clear unused roles and reset unused moderation stages to None. Do not assume that a reopened dialog has cleared earlier selections.
+
+3. Review simple mediation
+Open Analyze > PathLab: Mediation and Moderation. Choose Mediation as the analysis goal. Assign X to Predictor (X), Y to Outcome (Y), and M1 to Mediators. Leave W, Z, Q and covariates empty.
+
+Open Model and select Parallel with a continuous linear outcome. Keep all moderation stages at None. Under Options, select 1,000 bootstrap samples, 95% confidence, seed 20261028, HC3 and Standard output. These are quick review settings; the normal recommended starting bootstrap count is 5,000. Click the main OK button.
+
+Record whether the analysis finishes and produces native Viewer tables. Inspect variable roles, cases used, equation coefficients and the M1 indirect-effect estimate with its bootstrap confidence interval. The numerical values should be taken from the actual run; this guide supplies no unverified expected estimates. A pure mediation model has no moderated path, so the program should explain why interaction and Johnson–Neyman diagrams are inapplicable if they are requested.
+
+4. Review moderation and both diagrams
+Start a fresh PathLab dialog. Choose Moderation. Assign X and Y, assign W to Moderator W and leave Mediators blank. Under Model, use the continuous linear outcome. Under Moderators, set Direct path: X to Y to W and leave the other stages at None.
+
+Under Diagrams, select Show both diagrams (recommended). Optionally choose an empty destination folder for PNG copies. Under Options, use 1,000 bootstrap samples, 95% confidence, seed 20261028, HC3 and Standard output. Click the main OK button.
+
+Review coefficients including the interaction, conditional direct associations, simple slopes and the interaction test. The interaction diagram should label the fitted Y values, X values and W conditions. The Johnson–Neyman diagram should show the conditional X-to-Y slope across W, the zero line and a pointwise confidence band. If boundaries exist within the observed range, inspect their labels against the threshold table; an eligible model need not have a boundary in its observed range. Record any notices.
+
+Check that diagram footers carry the developer credit. If a PNG export folder was selected, confirm that the files appear in a new PathLab diagram subfolder and correspond to the Viewer diagrams.
+
+5. Review serial conditional process
+Start a fresh dialog and choose Conditional process. Assign X and Y, and add mediators in this order: M1, then M2. Under Model, select Serial and the continuous linear outcome. Assign W, Z and Q to their matching main-dialog moderator boxes, and C to Covariates.
+
+Under Moderators, assign First stage to W, Serial stage to Z, Final stage to Q and Direct path to None. Under Diagrams, request both types. Under Options, use 1,000 bootstrap samples, 95% confidence, seed 20261028, HC3 and Full output. Click the main OK button.
+
+Inspect the mediator ordering and fitted equations, conditional indirect associations, indices or derivatives, detailed contrasts and diagnostic tables. Three numerical moderators use the 16th and 84th percentile probes. Check that each diagram panel states the conditions held for other moderators and that multiple conditions are retained across pages. This example may take longer than the simpler examples.
+
+6. Record acceptance evidence
+For each example record the actual model choices, complete-case count, requested and successful bootstrap counts, warning messages, output appearance and elapsed time. Retain the synthetic output, optional result JSON and exported PNGs with the tested package checksum. Record whether repeated runs at the same settings and seed agree. Inspect all menu controls and Help, including at the reviewer's display size.
+
+The supplied interaction-preview.png and johnson-neyman-preview.png illustrate the diagram styles using a separate deterministic synthetic validation dataset. They are not numerical expected results for pathlab-demo.csv. The historical 71-case result and Johnson–Neyman boundary in the validation records also belong to that separate validation fixture.
+
+Known review limits
+The current record includes SPSS 27 native-command computation and embedded-diagram checks plus native form inspection. It does not record a complete analysis through the final main-menu OK button. Completing and recording sections 3–5 closes that specific review gap. Later SPSS releases, smaller displays and non-Windows installations also remain to be checked.

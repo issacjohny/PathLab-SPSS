@@ -1,0 +1,8 @@
+PathLab for IBM SPSS Statistics
+
+Developed by Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+
+The statistical source snapshot is documented in source-provenance.json.
+Third-party software retains its respective authorship and license terms.

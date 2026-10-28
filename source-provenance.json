@@ -1,0 +1,17 @@
+{
+  "format_version": 1,
+  "source_repository": "https://github.com/issacjohny/Stratistics",
+  "source_path": "workers/python/conditional_process.py",
+  "checkout_head": "12419ca61ea8782f3c78d05abd712f6a36902dc3",
+  "source_has_uncommitted_changes": true,
+  "source_sha256": "d9c74edc46851783d73b92f9ba96e2325e677e13a2228de3565676a54aaf247d",
+  "vendored_path": "pathlab_spss/core.py",
+  "vendored_sha256": "480036227c42015b31a7bbedd619e5cfa12643c1e9213419499a428dd76d1d9b",
+  "adaptation": {
+    "occurrences": 1,
+    "replace": "from engine import LabError",
+    "with": "from .errors import LabError",
+    "description": "Isolate the exception contract; statistical code is unchanged."
+  },
+  "note": "Source hash identifies the actual working-tree snapshot; checkout HEAD alone does not."
+}

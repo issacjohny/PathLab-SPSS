@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-10-28",
+  "version": "0.2.2",
+  "status": "github_beta_release_checks_passed",
+  "license": {
+    "spdx_id": "MIT",
+    "approved": true,
+    "approved_on": "2026-10-28"
+  },
+  "source_archive": {
+    "file": "PathLab-SPSS-0.2.2-source.zip",
+    "sha256": "b3b6b131285d855766e7827922f48b329000135bf98306a759068f7cce8aad0b",
+    "standalone_tests": {
+      "passed": 101,
+      "python_version": "3.11.9",
+      "elapsed_seconds": 6.32
+    },
+    "python_3_8_syntax_files_parsed": 25
+  },
+  "rebuild": {
+    "spe_and_windows_zip_byte_identical_to_release": true,
+    "spe_sha256": "eb0bd25bf22d2ee77d991386e74b994ddaf421cceece4f008e329dacefb74f8f",
+    "windows_zip_sha256": "42ec90aaeaf8e76378ce518645668c2e046ce3c85af215ab0f9607a41fe9312f"
+  },
+  "dossier": {
+    "pages": 8,
+    "all_rendered_pages_visually_inspected": true,
+    "docx_sha256": "5a356d9229aeb5d1f42f97823924714c5e43210d0642760d55ef4702e6300bf1",
+    "pdf_sha256": "eaece52ceb46d0aca916475375a9caaaf0b6480eba78046ec27c932cd76d69e9"
+  },
+  "native_spss_0_2_2_executed": false,
+  "later_spss_versions_executed": false,
+  "ibm_submission_sent": false,
+  "note": "GitHub distribution is a beta release; native execution evidence retains its original tested versions."
+}

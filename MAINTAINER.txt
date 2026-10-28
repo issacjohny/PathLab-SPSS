@@ -1,0 +1,17 @@
+PathLab for IBM SPSS Statistics
+
+Developed and maintained by Dr. B. Issac Johny
+Professor
+Gnanam School of Business, Thanjavur
+
+Public contact: johnydurai@gmail.com
+Developer website: https://www.johny.uk
+Project repository: https://github.com/issacjohny/PathLab-SPSS
+Releases: https://github.com/issacjohny/PathLab-SPSS/releases
+Issue tracker: https://github.com/issacjohny/PathLab-SPSS/issues
+
+License: MIT, approved by the developer on 28 October 2026.
+See LICENSE and THIRD-PARTY-NOTICES.txt.
+
+PathLab is a community-developed extension. IBM decides on Extension Hub
+catalog inclusion. Current validation scope is documented in VALIDATION.md.

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use PathLab, please cite this software."
+type: software
+title: "PathLab for IBM SPSS Statistics"
+version: "0.2.2"
+date-released: "2026-10-28"
+license: MIT
+authors:
+  - family-names: Johny
+    given-names: B. Issac
+    affiliation: "Gnanam School of Business, Thanjavur"
+    email: johnydurai@gmail.com
+repository-code: "https://github.com/issacjohny/PathLab-SPSS"
+url: "https://github.com/issacjohny/PathLab-SPSS"

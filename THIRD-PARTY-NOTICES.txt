@@ -1,0 +1,82 @@
+PathLab dependency and source notices
+Prepared 28 October 2026 | Version 0.2.2 beta
+
+PathLab developer
+Dr. B. Issac Johny, Professor
+Gnanam School of Business, Thanjavur
+johnydurai@gmail.com | https://www.johny.uk
+
+Scope of these notes
+
+The SPE and Windows release ZIP contain PathLab source and support files.
+They do not contain the numerical libraries' wheel binaries. The separate
+setup step downloads dependencies from PyPI into the user's PathLab folder.
+The dependency versions and their full license files remain with that
+installation. IBM SPSS Statistics and its bundled Python are provided
+separately and retain their own terms and credits.
+
+Direct libraries verified with SPSS 27 Python 3.8
+
+NumPy 1.24.4
+Upstream: https://github.com/numpy/numpy
+License evidence: numpy-1.24.4.dist-info/LICENSE.txt and
+LICENSES_bundled.txt, plus notices within the installed NumPy package.
+The main license is BSD-style; bundled numerical components have notices
+that must also be preserved where applicable.
+
+pandas 2.0.3
+Upstream: https://github.com/pandas-dev/pandas
+License evidence: pandas-2.0.3.dist-info/LICENSE.
+Main license: BSD-style.
+
+SciPy 1.10.1
+Upstream: https://github.com/scipy/scipy
+License evidence: scipy-1.10.1.dist-info/LICENSE.txt, plus bundled component
+notices, including _uarray, pocketfft, ARPACK and Qhull.
+Main license: BSD-style.
+
+statsmodels 0.14.1
+Upstream: https://github.com/statsmodels/statsmodels
+License evidence: statsmodels-0.14.1.dist-info/LICENSE.txt and notices within
+the installed statsmodels package, including libqsturng.
+Main license: BSD-style.
+
+Matplotlib 3.7.5
+Upstream: https://github.com/matplotlib/matplotlib
+License evidence: matplotlib-3.7.5.dist-info/LICENSE and additional LICENSE_*
+files; mpl-data includes font license files such as DejaVu and STIX.
+The main agreement is derived from the PSF license; bundled components and
+fonts have their respective terms. Do not replace the full notices with this
+short summary.
+
+Other distributions observed in the verified dependency folder
+
+contourpy 1.1.1; cycler 0.12.1; fonttools 4.57.0;
+importlib_resources 6.4.5; kiwisolver 1.4.7; packaging 26.2;
+patsy 1.0.3; pillow 10.4.0; pyparsing 3.1.4;
+python-dateutil 3.0.0; pytz 2026.5; six 1.17.0;
+tzdata 2026.5; zipp 3.20.2.
+
+This is an observed installation snapshot, not a universal lock file. The
+requirements select other direct versions for later Python interpreters;
+those installations can have different transitive dependencies and notices.
+Before redistributing any third-party binaries or fonts, collect and include
+the full notices from the exact distributions being redistributed. No such
+binary redistribution is added by this submission preparation.
+
+Statistical source provenance
+
+source-provenance.json identifies the frozen source snapshot from the
+Stratistics repository and the import adaptation made for SPSS. The original
+source hash and vendored hash are retained. The numerical engine, model
+definitions and exception contract in 0.2.2 are unchanged from the recorded
+0.2.0 runtime. The independent test suite uses matrix-based statistical
+references. It does not establish equivalence to the PROCESS macro.
+
+Licensing status
+
+The developer approved the MIT license on 28 October 2026. LICENSE contains
+the adopted PathLab license with Copyright (c) 2026 Dr. B. Issac Johny.
+The PathLab license does not replace the separately installed dependencies'
+respective terms and notices. IBM SPSS Statistics and IBM trademarks remain
+with their respective owners.

@@ -1,0 +1,112 @@
+{
+  "validated_on": "2026-10-28",
+  "version": "0.2.1",
+  "developer": {
+    "name": "Dr. B. Issac Johny",
+    "title": "Professor",
+    "affiliation": "Gnanam School of Business, Thanjavur",
+    "credit": "Developed by Dr. B. Issac Johny"
+  },
+  "python_version": "3.8.2",
+  "python_runtime": "SPSS 27 bundled Python",
+  "syntax_files_parsed": 24,
+  "extension_tests": {
+    "passed": 101
+  },
+  "report_check": {
+    "mode": "captured TextBlock and pivot-table calls; no running SPSS connection",
+    "first_text_block": "Version 0.2.1.\nDeveloped by Dr. B. Issac Johny\nProfessor\nGnanam School of Business, Thanjavur\n\nStart with the model summary and confidence intervals below. Requested interaction and\nJohnson\u2013Neyman diagrams follow these main tables.",
+    "main_and_appendix_tables_generated": 32
+  },
+  "diagrams": {
+    "charts": [
+      {
+        "title": "Interaction: x \u2192 m by w",
+        "kind": "interaction",
+        "path_id": "p_X_M1",
+        "moderator_id": "W",
+        "conditions": [
+          {}
+        ],
+        "page": 1,
+        "panels": 1,
+        "scale": "outcome_mean",
+        "note": "95% pointwise confidence bands for fitted means. Conditional fitted means, not individual prediction intervals or total pathway effects. Other numerical predictors are held at complete-case means and categorical predictors at their declared reference.",
+        "path": "examples/interaction-preview.png",
+        "sha256": "bf3a14f7b9d4cf293c963151dd98e9e512a23a62d31815787040f7e16375de50"
+      },
+      {
+        "title": "Johnson\u2013Neyman: x \u2192 m across w",
+        "kind": "johnson_neyman",
+        "path_id": "p_X_M1",
+        "moderator_id": "W",
+        "conditions": [
+          {}
+        ],
+        "page": 1,
+        "panels": 1,
+        "scale": "outcome units",
+        "focal_contrast": null,
+        "boundaries": [
+          [
+            -0.9124413470404931
+          ]
+        ],
+        "note": "95% pointwise confidence band; no multiplicity adjustment. Green regions use analytic path-slope boundaries within the observed moderator range. This is a conditional path effect, not an indirect-effect region.",
+        "path": "examples/johnson-neyman-preview.png",
+        "sha256": "279e0a77428cb96dd03c76141a08bbbed41cb4b8dd88f5ceec45daccefefae64"
+      }
+    ],
+    "notices": [],
+    "visually_inspected": true
+  },
+  "scope_limits": [
+    "This is an attribution update; the statistical core is unchanged.",
+    "The running SPSS session was not restarted or used for another native menu calculation.",
+    "Later SPSS releases were not executed."
+  ],
+  "scientific_modules_byte_identical_to_0_2_0": [
+    "pathlab_spss/core.py",
+    "pathlab_spss/errors.py",
+    "pathlab_spss/models.py"
+  ],
+  "installation": {
+    "method": "IBM installextbundles utility",
+    "installer_message": "PATHLAB bundle successfully installed.",
+    "installed_bundle_sha256": "6a6d8c1df0c93bd18904ac455b0cd1cbf844b83e1beb32b845aaeeb55ed1a5bd",
+    "installed_bundle_copy_matches_release": true,
+    "files": [
+      {
+        "installed_relative_path": "extensions/PATHLAB.py",
+        "sha256": "c5cdc26387a949dee64f3428934744f20bc1168bb0444e9c151af3568f7cac97",
+        "matches_bundle": true
+      },
+      {
+        "installed_relative_path": "extensions/PATHLAB.xml",
+        "sha256": "16b1b9582299223a4100b020224c07f7649b4f996f2feaffaa034db4f68424fd",
+        "matches_bundle": true
+      },
+      {
+        "installed_relative_path": "extensions/PATHLAB/pathlab_spss.zip",
+        "sha256": "77d40f335ce9b63e47ee4d8226f69f7797237fb96d6d8e43b3ecf4d33e8c2cd2",
+        "matches_bundle": true
+      },
+      {
+        "installed_relative_path": "extensions/PATHLAB/AUTHORS.txt",
+        "sha256": "83138d616564664a891fbf03a1be11bfc303e6ed5f24d377a6257614be3484c0",
+        "matches_bundle": true
+      },
+      {
+        "installed_relative_path": "extensions/PATHLAB/CITATION.txt",
+        "sha256": "65cfbc1ca9a1744171f38ff1aebea824623c212fbfdcb618f5b7443e9973c0b8",
+        "matches_bundle": true
+      }
+    ],
+    "bundle_manifest_author_verified": true,
+    "dialog_title_verified": true,
+    "dialog_metadata_note": "SPSS rewrites ExtensionDetails to generic IBM/SPSS metadata; the installed dialog retains the credited title and the bundle retains its author manifest.",
+    "installed_help_matches_bundle": true,
+    "isolated_installed_runtime_import_version": "0.2.1",
+    "running_spss_restarted": false
+  }
+}
